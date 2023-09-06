@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#normal {
+  background-color: skyblue;
+}
+
+#normal:hover {
+    background-color: blue;
+    transform: translateY(5px);
+}
+
+#sombreado { /*direita e esquerda, cima e baixo, ofuscabilidade*/
+  box-shadow: 3px 3px 30px blue;
+  background-color:aquamarine
+}
+
+#gradiente {
+  background: linear-gradient(to left, blue, aquamarine);
+}
+
+#gradiente:hover {
+    background: linear-gradient(to left, rgb(27, 55, 214));
+}
+
+#pontilhado {
+  border: 5px dotted red;
+  background-color: transparent ;
+  color: #fff;
+}
+
+#icone {
+  background-color: orange;
+  color: black;
+}
+
+#pointer {
+  background-color: rgb(58, 241, 41);
+  /*transição é o efeito especial */
+  transition: all 0.5s ease;
+}
+
+#pointer:active { /* só quando o user clica */
+  transform: scale(0.8);
+}
+
+#neon {
+  background-color: cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+
+#neon:hover {
+  box-shadow: 
+  0 0 5px cyan,
+  0 0 25px cyan,
+  0 0 50px cyan,
+  0 0 100px cyan,
+  0 0 200px cyan,
+}
+
+#vinil {
+  background-color: coral;
+  width: 100px;
+  height: 100px;
+  border-radius: 100rem;
+}
+
+#vinil:hover {
+  animation: xablau 5s infinite linear;
+}
+
+@keyframes xablau {
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
+}
